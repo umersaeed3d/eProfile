@@ -5,11 +5,9 @@
 
         <table cellspacing="8">
             <tr>
-                @if (auth()->user()->image=="")
+
                                 <?php $image='no-avater.png';  ?>
-                            @else
-                                <?php $image=auth()->user()->image;  ?>
-                            @endif
+
                 <td style="padding-left: 15px;"><img class="img-circle md-user-image"  src="{{url('uploads/files/users').'/'.$image}}"></td>
                 <td>{{auth()->user()->name}}</td>
             </tr>
@@ -46,7 +44,7 @@
                 </ul>
 
             </li>
-            
+
 
             <li title="Dashboard">
                 <a href="#">
@@ -86,8 +84,8 @@
                     <li><a href="/file/directories">Select Files</a></li>
                     <li><a href="/file">Files Details</a></li>
                     <li><a href="/file/update">Update Files</a></li>
-                    
-                    
+
+
                 </ul>
 
             </li>

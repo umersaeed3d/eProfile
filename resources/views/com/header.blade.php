@@ -19,11 +19,9 @@
                     <li><a href="#" id="main_search_btn" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE8B6;</i></a></li>
                     <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
                         <a href="#" class="user_action_image">
-                            @if (auth()->user()->image=="")
-                                <?php $image='no-avater.png';  ?>
-                            @else
-                                <?php $image=auth()->user()->image;  ?>
-                            @endif<img class="md-user-image" src="{{asset('uploads/files/users').'/'.$image}}" alt=""/></a>
+
+<?php $image='no-avater.png';  ?>
+                    <img class="md-user-image" src="{{asset('uploads/files/users').'/'.$image}}" alt=""/></a>
                         <div class="uk-dropdown uk-dropdown-small">
                             <ul class="uk-nav js-uk-prevent">
                                 <li><a href="/logout">Logout</a></li>
